@@ -79,5 +79,28 @@ function selectTile() {
     else if (this == currFoodTile) {
         document.getElementById("score").innerText = "GAME OVER: " + score.toString();
         gameOver = true;
+
+        document.getElementById("resetButton").style.display = "block";
+    }
+}
+
+function resetGame() {
+    currChickTile = null;
+    currFoodTile = null;
+    score = 0;
+    gameOver = false;
+
+    clearGameBoard();
+
+    setGame();
+    document.getElementById("score").innerText = score.toString();
+}
+
+function clearGameBoard() {
+    if(currChickTile) {
+        currChickTile.innerHTML = "";
+    }
+    if(currFoodTile) {
+        currFoodTile.innerHTML = "";
     }
 }

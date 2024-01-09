@@ -49,3 +49,33 @@ body {
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+
+#resetButton {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    /* align-self: center; */
+}
+
+
+#scoreContainer {
+    text-align: center; /* Center the content horizontally */
+}
+
+#score {
+    margin-bottom: 10px; /* Add some space between the score and the button */
+}
+
+/* thigs i want to improve:
+1. add user creation
+2. add scoreboard
+3. allow user to select an avatar
+4. randomise the food pictures
+5. add high score animation
+6. add different boards
+7. add different background
+8. improve the overall look and feel
+9. make the website accessible anywhere 
+10. create a database to retain the scores and users*/
